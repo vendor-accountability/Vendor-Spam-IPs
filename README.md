@@ -19,3 +19,5 @@ We do not currently support SPF2 or IPv6 (and in fairness I haven't seen any IPv
 We're going to start by grabbing the SPF records for a given domain(s), and all the includes.
 
 This means we need to understand official vs third party includes (e.g. including _spf.google.com is common, but is "owned" by Google). For now we'll just manually add these as needed into the major vendors domains.
+
+We'll most likely use a slightly hacked up version of https://github.com/nathandines/SPF2IP/blob/master/SPF2IP.py to dump the includes/data.
